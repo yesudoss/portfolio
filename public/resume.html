@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Yesu Doss X</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary: #2d3748;
+            --text: #4a5568;
+            --accent: #3182ce;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background: #fff;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .summary {
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 0.05em;
+        }
+
+        .job, .project, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .company {
+            font-weight: 600;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #718096;
+            font-style: italic;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .skill-list {
+            font-size: 0.95rem;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print" style="text-align: right; margin-bottom: 20px;">
+        <button onclick="window.print()" style="padding: 8px 16px; background: #3182ce; color: white; border: none; border-radius: 4px; cursor: pointer;">Print / Save as PDF</button>
+    </div>
+
+    <header>
+        <h1>Yesu Doss X</h1>
+        <div class="contact-info">
+            <span>+91 9786047451</span>
+            <span>|</span>
+            <a href="mailto:yesudossx@gmail.com">yesudossx@gmail.com</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/yesu-doss-x-847191197/" target="_blank">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/yesudoss" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <div class="summary">
+        <p>
+            Fullstack Developer with 5 years of experience building scalable web applications using Python (Flask, Django, FastAPI) and ReactJS. Skilled in designing RESTful APIs, implementing microservices, and creating responsive UIs. Proven ability to deliver robust solutions in Agile teams, with experience deploying on AWS and Azure. Strong problem-solving skills, keen eye for clean architecture, and a passion for learning new technologies.
+        </p>
+    </div>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-category">Languages</span>
+            <span class="skill-list">Python, JavaScript</span>
+        </div>
+        <div class="skills-grid">
+            <span class="skill-category">Frameworks</span>
+            <span class="skill-list">Django, FastAPI, Flask, Odoo, ReactJS, ExpressJS, GraphQL</span>
+        </div>
+        <div class="skills-grid">
+            <span class="skill-category">Databases</span>
+            <span class="skill-list">PostgreSQL, MongoDB</span>
+        </div>
+        <div class="skills-grid">
+            <span class="skill-category">Cloud</span>
+            <span class="skill-list">AWS (S3, SQS, EC2, Cognito), Azure (Blob Storage, Bus service, ACR)</span>
+        </div>
+        <div class="skills-grid">
+            <span class="skill-category">Tools & DevOps</span>
+            <span class="skill-list">Docker, Node.js, VS Code, Git, GitHub, Bitbucket</span>
+        </div>
+        <div class="skills-grid">
+            <span class="skill-category">Testing</span>
+            <span class="skill-list">Pytest, Jest</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="title">Software Engineer</span>, <span class="company">RAVSoft Solutions Pvt. Ltd.</span>
+                </div>
+                <span class="date">Chennai | March 2024 – Present</span>
+            </div>
+            <ul>
+                <li>Developed and maintained scalable fullstack applications for handling sensitive Patient Health Information (PHI), ensuring HIPAA compliance.</li>
+                <li>Designed microservices using Flask and FastAPI, reducing API latency by 30%.</li>
+                <li>Integrated AWS/Azure services for file storage and deployment, enhancing application scalability.</li>
+                <li>Used Appsmith for internal tools, reducing manual effort by 40%.</li>
+                <li>Worked in Agile sprints, ensuring 95% sprint success rate.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="title">Software Engineer</span>, <span class="company">Boscosoft Technologies Pvt. Ltd.</span>
+                </div>
+                <span class="date">Yelagiri Hills | Jan 2021 – March 2024</span>
+            </div>
+            <ul>
+                <li>Built and deployed fullstack applications using Django, Flask, and ReactJS.</li>
+                <li>Implemented GraphQL APIs, improving frontend performance by 25%.</li>
+                <li>Developed HR and ERP modules, reducing HR processing time by 50%.</li>
+                <li>Created dynamic form-builder systems and custom reports for multiple industries.</li>
+                <li>Improved UI/UX across internal dashboards.</li>
+                <li>Developed unit and integration tests using Pytest and Jest, achieving 85% code coverage.</li>
+                <li>Assisted the development team by reviewing code, assigning tasks, and resolving technical doubts.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="title">COVERA</span>
+                <span class="date">2024</span>
+            </div>
+            <p style="margin: 5px 0; font-size: 0.9rem;"><em>Python, Flask, FastAPI, ReactJS, PostgreSQL, Appsmith, AWS</em></p>
+            <ul>
+                <li>A healthcare app managing patient health info (PHI) via microservices.</li>
+                <li>Handles authorization, DICOM uploads, and report management, ensuring healthcare compliance.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="title">CRISTOPLUS</span>
+                <span class="date">2023</span>
+            </div>
+            <p style="margin: 5px 0; font-size: 0.9rem;"><em>Python, Django, GraphQL, ReactJS</em></p>
+            <ul>
+                <li>A dynamic church management system facilitating giving, calendar synchronization, and member administration.</li>
+                <li>Implemented tailored user roles for efficient collaboration and seamless organization.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="title">KAPTRACK</span>
+                <span class="date">2023</span>
+            </div>
+            <p style="margin: 5px 0; font-size: 0.9rem;"><em>Python, Django, GraphQL, ReactJS</em></p>
+            <ul>
+                <li>Developed a dynamic form-building solution enabling creation of customizable forms and reports.</li>
+                <li>Enhanced data-driven decision-making through seamless integration and user-friendly interface.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="title">MEEPL</span>
+                <span class="date">2022</span>
+            </div>
+            <p style="margin: 5px 0; font-size: 0.9rem;"><em>Node.js, ExpressJS, ReactJS, PostgreSQL</em></p>
+            <ul>
+                <li>Web-based HR management app streamlining onboarding, leave management, and ATS.</li>
+                <li>Built on the PERN stack with a microservices architecture for scalability.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <span class="title">B.Sc in Computer Science</span>, <span class="company">Don Bosco College, Yelagiri Hills</span>
+                </div>
+                <span class="date">June 2017 – March 2020</span>
+            </div>
+            <p style="font-size: 0.95rem; margin-top: 5px;">CGPA: 7.5/10.0</p>
+        </div>
+    </section>
+</body>
+</html>
