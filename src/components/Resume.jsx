@@ -2,25 +2,25 @@ import { portfolioData } from '../data/content';
 import '../App.css';
 
 const Resume = () => {
-    return (
-        <section id="resume" className="resume-section">
-            <div className="container">
-                <h2 className="section-title">06. Resume</h2>
+  return (
+    <section id="resume" className="resume-section">
+      <div className="container">
+        <h2 className="section-title">06. Resume</h2>
 
-                <div className="resume-container">
-                    <div className="resume-text">
-                        <h3>Check out my résumé!</h3>
-                        <p>
-                            Grab a copy of my full résumé to read about my experience, education, and skills in detail.
-                        </p>
-                        <a href="/resume.pdf" target="_blank" className="btn btn-primary big-btn" rel="noopener noreferrer">
-                            Download PDF
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div className="resume-container">
+          <div className="resume-text">
+            <h3>Check out my résumé!</h3>
+            <p>
+              Grab a copy of my full résumé to read about my experience, education, and skills in detail.
+            </p>
+            <a href="/resume.html" target="_blank" className="btn btn-primary big-btn" rel="noopener noreferrer">
+              View Resume
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .resume-section {
           background-color: var(--bg-secondary);
           text-align: center;
@@ -50,8 +50,8 @@ const Resume = () => {
           font-size: 1.1rem;
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Resume;
